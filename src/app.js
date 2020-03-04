@@ -3,8 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 ('use strict');
 
 export class GalacticAge {
-	constructor() {}
+	constructor(name, yearsOld) {
+		this.name = name;
+		this.yearsOld = yearsOld;
+	}
+
+	calculateAge(yearsOld) {
+		const earthAge = yearsOld;
+		const mercuryAge = yearsOld * 0.24;
+		console.log(earthAge);
+	}
 }
+
+firstTest = new GalacticAge('luke', 30);
+console.log(firstTest);
 
 // export class Character {
 // 	constructor(name, charClass, strength, dexterity, wisdom, charisma, intelligence, constitution) {
