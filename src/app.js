@@ -16,6 +16,10 @@ export class GalacticAge {
 		return Math.floor(yearsOld * 0.24);
 	}
 
+	venusAge(yearsOld) {
+		return Math.floor(yearsOld * 0.62);
+	}
+
 	// earthAge(yearsOld) {
 	// 	return yearsOld;
 	// }

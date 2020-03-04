@@ -19,6 +19,9 @@ describe('CalculateAge', () => {
 	test('Make sure calculateAge method is working correctly for Mercury', () => {
 		expect(myAge.mercuryAge(parseFloat(myAge.yearsOld))).toEqual(7);
 	});
+	test('Make sure calculateAge method is working correctly for Venus', () => {
+		expect(myAge.venusAge(parseFloat(myAge.yearsOld))).toEqual(18);
+	});
 });
 
 // describe('Battle', () => {
