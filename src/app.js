@@ -20,13 +20,13 @@ export class GalacticAge {
 		return Math.floor(yearsOld * 0.62);
 	}
 
-	// earthAge(yearsOld) {
-	// 	return yearsOld;
-	// }
+	marsAge(yearsOld) {
+		return Math.floor(yearsOld * 1.88);
+	}
 
-	// earthAge(yearsOld) {
-	// 	return yearsOld;
-	// }
+	jupiterAge(yearsOld) {
+		return Math.floor(yearsOld * 11.86);
+	}
 }
 
 const firstTest = new GalacticAge('luke', 30);

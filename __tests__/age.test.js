@@ -17,10 +17,16 @@ describe('CalculateAge', () => {
 		expect(myAge.earthAge(myAge.yearsOld)).toEqual(30);
 	});
 	test('Make sure calculateAge method is working correctly for Mercury', () => {
-		expect(myAge.mercuryAge(parseFloat(myAge.yearsOld))).toEqual(7);
+		expect(myAge.mercuryAge(myAge.yearsOld)).toEqual(7);
 	});
 	test('Make sure calculateAge method is working correctly for Venus', () => {
-		expect(myAge.venusAge(parseFloat(myAge.yearsOld))).toEqual(18);
+		expect(myAge.venusAge(myAge.yearsOld)).toEqual(18);
+	});
+	test('Make sure calculateAge method is working correctly for Mars', () => {
+		expect(myAge.marsAge(myAge.yearsOld)).toEqual(56);
+	});
+	test('Make sure calculateAge method is working correctly for Jupiter', () => {
+		expect(myAge.jupiterAge(myAge.yearsOld)).toEqual(355);
 	});
 });
 
