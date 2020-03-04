@@ -11,6 +11,18 @@ export class GalacticAge {
 	earthAge(yearsOld) {
 		return yearsOld;
 	}
+
+	mercuryAge(yearsOld) {
+		return Math.floor(yearsOld * 0.24);
+	}
+
+	// earthAge(yearsOld) {
+	// 	return yearsOld;
+	// }
+
+	// earthAge(yearsOld) {
+	// 	return yearsOld;
+	// }
 }
 
 const firstTest = new GalacticAge('luke', 30);
