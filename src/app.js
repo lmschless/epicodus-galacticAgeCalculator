@@ -15,7 +15,7 @@ export class GalacticAge {
 	}
 }
 
-firstTest = new GalacticAge('luke', 30);
+const firstTest = new GalacticAge('luke', 30);
 console.log(firstTest);
 
 // export class Character {
