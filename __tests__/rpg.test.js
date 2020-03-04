@@ -9,10 +9,13 @@ describe('GalacticAge', () => {
 });
 
 describe('CalculateAge', () => {
+	let myAge;
+	beforeEach(() => {
+		myAge = new GalacticAge('Luke', 30);
+	});
 	test('Make sure calculateAge method is workng correctly for each planet', () => {
-		const myAge = new GalacticAge('Luke', 30);
 		const earthAge = myAge.yearsOld;
-		expect(myAge.yearsOld).toEqual(30);
+		expect(earthAge).toEqual(30);
 	});
 });
 
