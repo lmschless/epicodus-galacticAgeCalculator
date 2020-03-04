@@ -33,10 +33,10 @@ describe('CalculateAge', () => {
 describe('lifeExpectancy', () => {
 	let myAge;
 	beforeEach(() => {
-		myAge = new GalacticAge('Luke', 30, 100);
+		myAge = new GalacticAge('Luke', 30);
 	});
 	test('Make sure lifeExpectancy method is working correctly.', () => {
-		expect(myAge.lifeExpectancy(myAge)).toEqual(52);
+		expect(myAge.lifeExpectancy()).toEqual(52);
 	});
 });
 

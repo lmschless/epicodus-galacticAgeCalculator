@@ -3,15 +3,15 @@
 ('use strict');
 
 export class GalacticAge {
-	constructor(name, yearsOld, lifeExpectancy = 82) {
+	constructor(name, yearsOld, life) {
 		this.name = name;
 		this.yearsOld = yearsOld;
-		this.lifeExpectancy = lifeExpectancy;
+		this.life = parseInt(82);
 	}
 
 	earthAge(yearsOld) {
 		const earthYears = yearsOld;
-		return earthYears;
+		return parseInt(earthYears);
 	}
 
 	mercuryAge(yearsOld) {
@@ -31,17 +31,17 @@ export class GalacticAge {
 		return Math.floor(yearsOld * 11.86);
 	}
 
-	lifeExpectancy() {
-		this.earthYears;
-		const earthLeft = this.lifeExpectancy - earthYears;
-		const mercLeft = this.lifeExpectancy - mercYears;
-		return earthLeft, mercLeft;
+	lifeExpectancy(yearsOld, life) {
+		// const earthLeft = 82 - earthYears;
+		// console.log(earthYears);
+		// const mercLeft = this.lifeExpectancy - mercYears;
+		// return this.life - this.earthYears;
+		return parseInt(yearsOld + life);
 	}
 }
 
 const firstTest = new GalacticAge('luke', 30);
-console.log(firstTest);
-
+console.log(firstTest.lifeExpectancy());
 // export class Character {
 // 	constructor(name, charClass, strength, dexterity, wisdom, charisma, intelligence, constitution) {
 // 		this.name = name;
