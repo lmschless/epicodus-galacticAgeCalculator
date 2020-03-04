@@ -1,10 +1,18 @@
 import { GalacticAge } from '.././src/app.js';
 
 describe('GalacticAge', () => {
-	test('Make sure warrior object is created correctly.', () => {
-		var galacticAge = new GalacticAge('luke', 30);
+	test('Make sure new GalacticAge class is created correctly.', () => {
+		const galacticAge = new GalacticAge('luke', 30);
 		expect(galacticAge.name).toEqual('luke');
 		expect(galacticAge.yearsOld).toEqual(30);
+	});
+});
+
+describe('CalculateAge', () => {
+	test('Make sure calculateAge method is workng correctly for each planet', () => {
+		const myAge = new GalacticAge('Luke', 30);
+		const earthAge = myAge.yearsOld;
+		expect(myAge.yearsOld).toEqual(30);
 	});
 });
 
