@@ -8,10 +8,8 @@ export class GalacticAge {
 		this.yearsOld = yearsOld;
 	}
 
-	calculateAge(yearsOld) {
-		const earthAge = yearsOld;
-		const mercuryAge = yearsOld * 0.24;
-		console.log(earthAge);
+	earthAge(yearsOld) {
+		return yearsOld;
 	}
 }
 

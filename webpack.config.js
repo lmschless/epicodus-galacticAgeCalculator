@@ -18,7 +18,7 @@ module.exports = {
 		new UglifyJsPlugin({ sourceMap: true }),
 		new CleanWebpackPlugin(),
 		new HtmlWebpackPlugin({
-			title: 'shapeArea',
+			title: 'Galactic Age',
 			template: './src/index.html',
 			inject: 'head'
 		}),
