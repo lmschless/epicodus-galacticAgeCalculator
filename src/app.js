@@ -3,17 +3,20 @@
 ('use strict');
 
 export class GalacticAge {
-	constructor(name, yearsOld) {
+	constructor(name, yearsOld, lifeExpectancy = 82) {
 		this.name = name;
 		this.yearsOld = yearsOld;
+		this.lifeExpectancy = lifeExpectancy;
 	}
 
 	earthAge(yearsOld) {
-		return yearsOld;
+		const earthYears = yearsOld;
+		return earthYears;
 	}
 
 	mercuryAge(yearsOld) {
-		return Math.floor(yearsOld * 0.24);
+		const mercYears = Math.floor(yearsOld * 0.24);
+		return mercYears;
 	}
 
 	venusAge(yearsOld) {
@@ -26,6 +29,13 @@ export class GalacticAge {
 
 	jupiterAge(yearsOld) {
 		return Math.floor(yearsOld * 11.86);
+	}
+
+	lifeExpectancy() {
+		this.earthYears;
+		const earthLeft = this.lifeExpectancy - earthYears;
+		const mercLeft = this.lifeExpectancy - mercYears;
+		return earthLeft, mercLeft;
 	}
 }
 
