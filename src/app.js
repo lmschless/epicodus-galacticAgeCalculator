@@ -36,11 +36,11 @@ export class GalacticAge {
 		// console.log(earthYears);
 		// const mercLeft = this.lifeExpectancy - mercYears;
 		// return this.life - this.earthYears;
-		return parseInt(life - earthYears);
+		return life - earthYears;
 	}
 }
 
-const firstTest = new GalacticAge('luke', 30);
+const firstTest = new GalacticAge('luke', 30, 82);
 console.log(firstTest.lifeExpectancy());
 // export class Character {
 // 	constructor(name, charClass, strength, dexterity, wisdom, charisma, intelligence, constitution) {
