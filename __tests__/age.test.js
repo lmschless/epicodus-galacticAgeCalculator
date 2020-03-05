@@ -36,7 +36,7 @@ describe('lifeExpectancy', () => {
 		myAge = new GalacticAge('Luke', 30);
 	});
 	test('Make sure lifeExpectancy method is working correctly.', () => {
-		expect(myAge.lifeExpectancy()).toEqual(52);
+		expect(myAge.lifeExpectancy(30, 100)).toEqual(70);
 	});
 });
 

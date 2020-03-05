@@ -31,12 +31,12 @@ export class GalacticAge {
 		return Math.floor(yearsOld * 11.86);
 	}
 
-	lifeExpectancy(yearsOld, life) {
+	lifeExpectancy(earthYears, life) {
 		// const earthLeft = 82 - earthYears;
 		// console.log(earthYears);
 		// const mercLeft = this.lifeExpectancy - mercYears;
 		// return this.life - this.earthYears;
-		return parseInt(yearsOld + life);
+		return parseInt(life - earthYears);
 	}
 }
 
