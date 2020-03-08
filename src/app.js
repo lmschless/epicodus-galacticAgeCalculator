@@ -3,7 +3,7 @@
 ('use strict');
 
 export class GalacticAge {
-	constructor(name, yearsOld, life) {
+	constructor(name, yearsOld) {
 		this.name = name;
 		this.yearsOld = yearsOld;
 		this.life = 82;
@@ -31,7 +31,7 @@ export class GalacticAge {
 		return Math.floor(yearsOld * 11.86);
 	}
 
-	lifeExpectancy(earthYears, planet) {
+	lifeExpectancy(planet) {
 		// const earthLeft = 82 - earthYears;
 		// console.log(earthYears);
 		// const mercLeft = this.lifeExpectancy - mercYears;
@@ -39,7 +39,13 @@ export class GalacticAge {
 		if (planet.toLowerCase() == 'earth') {
 			return this.life - this.yearsOld;
 		} else if (planet.toLowerCase() == 'mercury') {
-			return this.life - this.yearsOld * 0.24;
+			return this.life * 0.24 - this.yearsOld * 0.24;
+		} else if (planet.toLowerCase() == 'venus') {
+			return this.life * 0.62 - this.yearsOld * 0.62;
+		} else if (planet.toLowerCase() == 'mars') {
+			return this.life * 1.88 - this.yearsOld * 1.88;
+		} else if (planet.toLowerCase() == 'jupiter') {
+			return this.yearsOld * 11.86 - this.life;
 		}
 		// return life - earthYears;
 	}
@@ -47,6 +53,8 @@ export class GalacticAge {
 	// return life - earthYears;
 }
 
-const firstTest = new GalacticAge('luke', 30, 82);
-console.log(firstTest.lifeExpectancy(30, 'earth'));
-console.log(firstTest.lifeExpectancy(30, 'earth'));
+const firstTest = new GalacticAge('luke', 30);
+console.log(firstTest.lifeExpectancy('earth'));
+console.log(firstTest.lifeExpectancy('MERCURY'));
+console.log(firstTest.lifeExpectancy('mars'));
+console.log(firstTest.lifeExpectancy('jupiter'));
