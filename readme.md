@@ -8,7 +8,7 @@
 
 ## Setup/Installation Requirements
 
-* _Clone repo, run npm install, type "npm run start". Update lines 56-60 in app.js to test the functionality._
+* _Clone repo, run npm install, type "npm run start". Update lines 56-60 in app.js to test the functionality. Check browser console for output._
 
 ## Specifications:
   * Spec 1: The app creates a new galactic age class with your name, current age, and set life expectancy age (82)
@@ -20,13 +20,13 @@
   * Spec 3: App calculates your age on Jupiter.
     + Input: "console.log(firstTest.jupiterAge());"
     + Output: "2"
-  * Spec 3: App calculates your life expectancy on any given planet.
+  * Spec 4: App calculates your life expectancy on any given planet.
     + Input: "console.log(firstTest.lifeExpectancy('jupiter'));"
-    + Output: "2"
+    + Output: "You have 4.3844856661045535 Jupiter years left to live on Jupiter."
 
      
 ## Future Features
-* _Styling, design._
+* _Styling, UI design._
 
 ## Support and contact details
 
@@ -34,7 +34,7 @@ _Please open an issue if you find any bugs, thanks!_
 
 ## Technologies Used
 
-_Bootstrap for the form. Google Font library for body,  jQuery, Vanilla JS, CSS._
+_Vanilla JS, CSS._
 
 ### License
 
