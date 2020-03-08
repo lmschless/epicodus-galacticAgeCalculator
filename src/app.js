@@ -9,26 +9,26 @@ export class GalacticAge {
 		this.life = 82;
 	}
 
-	earthAge(yearsOld) {
-		const earthYears = yearsOld;
-		return parseInt(earthYears);
+	earthAge() {
+		const earthYears = this.yearsOld;
+		return earthYears;
 	}
 
-	mercuryAge(yearsOld) {
-		const mercYears = Math.floor(yearsOld / 0.24);
+	mercuryAge() {
+		const mercYears = Math.floor(this.yearsOld / 0.24);
 		return mercYears;
 	}
 
-	venusAge(yearsOld) {
-		return Math.floor(yearsOld / 0.62);
+	venusAge() {
+		return Math.floor(this.yearsOld / 0.62);
 	}
 
-	marsAge(yearsOld) {
-		return Math.floor(yearsOld / 1.88);
+	marsAge() {
+		return Math.floor(this.yearsOld / 1.88);
 	}
 
-	jupiterAge(yearsOld) {
-		return Math.floor(yearsOld / 11.86);
+	jupiterAge() {
+		return Math.floor(this.yearsOld / 11.86);
 	}
 
 	lifeExpectancy(planet) {
@@ -54,6 +54,10 @@ export class GalacticAge {
 }
 
 const firstTest = new GalacticAge('luke', 30);
+console.log(firstTest.mercuryAge());
+console.log(firstTest.venusAge());
+console.log(firstTest.marsAge());
+console.log(firstTest.jupiterAge());
 console.log(firstTest.lifeExpectancy('earth'));
 console.log(firstTest.lifeExpectancy('MERCURY'));
 console.log(firstTest.lifeExpectancy('mars'));

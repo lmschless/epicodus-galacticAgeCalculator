@@ -1,19 +1,28 @@
-# Independent Pizza Parlor for Epicodus JS/React Bootcamp
+# Galactic Age Calculator - Independent Project for Epicodus. 
 
 #### _Accepts input from a user to place a pizza order. Uses ES6 classes and constuctors when the submit button is clicked. Reads out the price and transaction history on click._
 
-#### _2/22/20_
+#### _3/7/20_
 
 #### By _**Luke Schlessinger**_
 
 ## Setup/Installation Requirements
 
-* _Requires: index.html, app.js, index.css, any modern browser - IE is not supported._
+* _Clone repo, run npm install, type "npm run start". Update lines 56-60 in app.js to test the functionality._
 
 ## Specifications:
-  * Spec 1: The program returns a current total.
-    + Input: "Personal pizza, 2 toppings"
-    + Output: "Total:$14, transaction history output using name, pizza size, topping count and price."
+  * Spec 1: The app creates a new galactic age class with your name, current age, and set life expectancy age (82)
+    + Input: "const firstTest = new GalacticAge('luke', 30);"
+    + Output: "new Galactic Age object created with name of Luke and age 30."
+  * Spec 2: App calculates your age on Mercury.
+    + Input: "console.log(firstTest.mercuryAge());"
+    + Output: "125"
+  * Spec 3: App calculates your age on Jupiter.
+    + Input: "console.log(firstTest.jupiterAge());"
+    + Output: "2"
+  * Spec 3: App calculates your life expectancy on any given planet.
+    + Input: "console.log(firstTest.lifeExpectancy('jupiter'));"
+    + Output: "2"
 
      
 ## Future Features
