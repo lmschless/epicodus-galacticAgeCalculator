@@ -15,44 +15,42 @@ export class GalacticAge {
 	}
 
 	mercuryAge(yearsOld) {
-		const mercYears = Math.floor(yearsOld * 0.24);
+		const mercYears = Math.floor(yearsOld / 0.24);
 		return mercYears;
 	}
 
 	venusAge(yearsOld) {
-		return Math.floor(yearsOld * 0.62);
+		return Math.floor(yearsOld / 0.62);
 	}
 
 	marsAge(yearsOld) {
-		return Math.floor(yearsOld * 1.88);
+		return Math.floor(yearsOld / 1.88);
 	}
 
 	jupiterAge(yearsOld) {
-		return Math.floor(yearsOld * 11.86);
+		return Math.floor(yearsOld / 11.86);
 	}
 
 	lifeExpectancy(planet) {
-		// const earthLeft = 82 - earthYears;
-		// console.log(earthYears);
-		// const mercLeft = this.lifeExpectancy - mercYears;
-		// return this.life - this.earthYears;
 		if (planet.toLowerCase() == 'earth') {
-			return this.life - this.yearsOld;
+			let result = this.life - this.yearsOld;
+			return `You have ${result} Earth years left to live on Earth.`;
 		} else if (planet.toLowerCase() == 'mercury') {
-			return this.life / 0.24 - this.yearsOld / 0.24;
+			let result = this.life / 0.24 - this.yearsOld / 0.24;
+			return `You have ${result} Mercury years left to live on Mercury.`;
 		} else if (planet.toLowerCase() == 'venus') {
-			return this.life / 0.62 - this.yearsOld / 0.62;
+			let result = this.life / 0.62 - this.yearsOld / 0.62;
+			return `You have ${result} Venus years left to live on Venus.`;
 		} else if (planet.toLowerCase() == 'mars') {
-			return this.life / 1.88 - this.yearsOld / 1.88;
+			let result = this.life / 1.88 - this.yearsOld / 1.88;
+			return `You have ${result} Mars years left to live on Mars.`;
 		} else if (planet.toLowerCase() == 'jupiter') {
-			return this.yearsOld / 11.86 - this.life / 11.86;
+			let result = this.life / 11.86 - this.yearsOld / 11.86;
+			return `You have ${result} Jupiter years left to live on Jupiter.`;
 		} else {
 			console.log('Please input a valid planet!');
 		}
-		// return life - earthYears;
 	}
-
-	// return life - earthYears;
 }
 
 const firstTest = new GalacticAge('luke', 30);

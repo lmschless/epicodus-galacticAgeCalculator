@@ -17,16 +17,16 @@ describe('CalculateAge', () => {
 		expect(myAge.earthAge(myAge.yearsOld)).toEqual(30);
 	});
 	test('Make sure calculateAge method is working correctly for Mercury', () => {
-		expect(myAge.mercuryAge(myAge.yearsOld)).toEqual(7);
+		expect(myAge.mercuryAge(myAge.yearsOld)).toEqual(125);
 	});
 	test('Make sure calculateAge method is working correctly for Venus', () => {
-		expect(myAge.venusAge(myAge.yearsOld)).toEqual(18);
+		expect(myAge.venusAge(myAge.yearsOld)).toEqual(48);
 	});
 	test('Make sure calculateAge method is working correctly for Mars', () => {
-		expect(myAge.marsAge(myAge.yearsOld)).toEqual(56);
+		expect(myAge.marsAge(myAge.yearsOld)).toEqual(15);
 	});
 	test('Make sure calculateAge method is working correctly for Jupiter', () => {
-		expect(myAge.jupiterAge(myAge.yearsOld)).toEqual(355);
+		expect(myAge.jupiterAge(myAge.yearsOld)).toEqual(2);
 	});
 });
 
@@ -36,7 +36,9 @@ describe('lifeExpectancy', () => {
 		myAge = new GalacticAge('Luke', 30);
 	});
 	test('Make sure lifeExpectancy method is working correctly.', () => {
-		expect(myAge.lifeExpectancy(30, 100)).toEqual(70);
+		expect(myAge.lifeExpectancy('jupiter')).toEqual(
+			'You have 4.3844856661045535 Jupiter years left to live on Jupiter.'
+		);
 	});
 });
 
