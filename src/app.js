@@ -39,13 +39,15 @@ export class GalacticAge {
 		if (planet.toLowerCase() == 'earth') {
 			return this.life - this.yearsOld;
 		} else if (planet.toLowerCase() == 'mercury') {
-			return this.life * 0.24 - this.yearsOld * 0.24;
+			return this.life / 0.24 - this.yearsOld / 0.24;
 		} else if (planet.toLowerCase() == 'venus') {
-			return this.life * 0.62 - this.yearsOld * 0.62;
+			return this.life / 0.62 - this.yearsOld / 0.62;
 		} else if (planet.toLowerCase() == 'mars') {
-			return this.life * 1.88 - this.yearsOld * 1.88;
+			return this.life / 1.88 - this.yearsOld / 1.88;
 		} else if (planet.toLowerCase() == 'jupiter') {
-			return this.yearsOld * 11.86 - this.life;
+			return this.yearsOld / 11.86 - this.life / 11.86;
+		} else {
+			console.log('Please input a valid planet!');
 		}
 		// return life - earthYears;
 	}
